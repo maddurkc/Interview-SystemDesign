@@ -1,0 +1,15 @@
+.names-list {
+  font-family: Arial, sans-serif;
+}
+
+.letter-group {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 16px;
+}
+
+.name {
+  padding-left: 16px;
+  padding-bottom: 4px;
+}
+ 

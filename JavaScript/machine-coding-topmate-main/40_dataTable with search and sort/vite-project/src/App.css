@@ -1,0 +1,71 @@
+/* DataTable.css */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-container {
+  padding: 20px;
+}
+
+.search-input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 300px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border: 1px solid #ddd; /* Add border to the table */
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd; /* Add border to each cell */
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  cursor: pointer;
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+/* Add sorting arrows */
+.table th.sort-asc::after,
+.table th.sort-desc::after {
+  content: '';
+  position: absolute;
+  right: 8px;
+  border: 4px solid transparent;
+}
+
+.table th.sort-asc::after {
+  border-bottom-color: #000; /* Black down arrow */
+  top: 50%;
+  margin-top: -2px;
+}
+
+.table th.sort-desc::after {
+  border-top-color: #000; /* Black up arrow */
+  bottom: 50%;
+  margin-bottom: -2px;
+}
+
+.pagination-controls {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-btn {
+  padding: 5px 15px;
+}
+
+.pagination-info {
+  margin: auto 0;
+}

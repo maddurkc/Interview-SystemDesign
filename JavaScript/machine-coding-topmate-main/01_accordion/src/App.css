@@ -1,0 +1,41 @@
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+
+.app-container label {
+  display: block;
+}
+
+.app-container input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.checkboxContainer > input {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,82 @@
+/* TransferList.css */
+.transfer-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align the tops of the list boxes and controls */
+  padding: 20px;
+  gap: 20px; /* Gap between the list boxes and the control buttons */
+}
+
+.list-box {
+  background-color: #fff; /* Assuming a white background */
+  border: 1px solid #ccc; /* Light grey border */
+  width: 300px; /* Width of the list boxes */
+  min-height: 400px; /* Minimum height of the list boxes */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  display: flex;
+  flex-direction: column;
+}
+
+.list-box h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.list-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; /* Allows scrolling */
+  flex: 1; /* Allows the list to expand to fill the container */
+}
+
+.list-box li {
+  border-bottom: 1px solid #eee; /* Light grey border for each list item */
+  padding: 10px; /* Padding for list items */
+  display: flex; /* To align checkbox and label */
+  align-items: center; /* Center items vertically */
+  cursor: pointer;
+}
+
+.list-box li:hover {
+  background-color: #f7f7f7; /* Hover state */
+}
+
+.list-box li label {
+  flex-grow: 1; /* Allow label to fill space */
+  cursor: pointer;
+}
+
+.transfer-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* This will center the buttons vertically */
+  align-items: center; /* Center the buttons horizontally */
+  position: relative;
+  top: 120px;
+}
+
+.transfer-controls button {
+  background-color: #e7e7e7; /* Button background color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding for buttons */
+  margin: 10px 0; /* Spacing between buttons */
+  border-radius: 50%; /* Rounded corners for buttons */
+  width: 40px; /* Fixed width for a circular shape */
+  height: 40px; /* Fixed height for a circular shape */
+  font-size: 16px; /* Font size for the arrows */
+  display: flex; /* Use flex to align the icon inside the button */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.transfer-controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5; /* Disabled state opacity */
+}
+
+.transfer-controls button:not(:disabled):hover {
+  background-color: #d7d7d7; /* Hover state for buttons */
+}

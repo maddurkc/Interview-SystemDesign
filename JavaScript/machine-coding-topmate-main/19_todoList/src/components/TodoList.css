@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.container.text-center {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#todoItemInput {
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+  font-size: 1.25rem;
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.no-elements {
+  display: none;
+  color: #666;
+  margin-top: 20px;
+}
+
+.list-container {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-container li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.list-container li .text {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+button {
+  margin-left: 0.5rem;
+  color: #333;
+  font-size: 1rem;
+  background: #eee;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+button.edit {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+button.delete {
+  background-color: #d9534f;
+  color: white;
+}
+
+/* If the list is empty, show the .no-elements message */
+.list-container:empty + .no-elements {
+  display: block;
+}
+
+/* Additional styles (like for the form, body, etc.) can be added as needed */

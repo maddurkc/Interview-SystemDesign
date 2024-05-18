@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-strength {
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.weak {
+  background-color: red;
+}
+
+.moderate {
+  background-color: yellow;
+}
+
+.strong {
+  background-color: green;
+}

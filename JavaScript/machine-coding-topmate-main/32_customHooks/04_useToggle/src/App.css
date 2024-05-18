@@ -1,0 +1,23 @@
+.app_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggle_btn {
+  padding: 20px;
+  width: 100px;
+  background-color: rgb(136, 243, 136);
+  color: rgb(243, 242, 242);
+  border: none;
+  text-align: center;
+}
+.toggle_btn:focus{
+  outline: none;
+}
+.toggle_btn:hover{
+  transform: scale(0.95);
+  border: none;
+  outline: none;
+}
